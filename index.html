@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,59 +14,30 @@
       <input type="text" id="display" readonly>
       <br>
       <div class="buttons">
-        <button onclick="cDisplay = cDisplay + '(';
-      document.querySelector('#display').value = cDisplay;">(</button>
-        <button onclick="cDisplay = cDisplay + ')';
-      document.querySelector('#display').value = cDisplay;">)</button>
-        <button onclick="">%</button>
-        <button onclick="cDisplay = '';
-      document.querySelector('#display').value = cDisplay;">AC</button>
-        <button onclick="cDisplay = cDisplay + '7';
-      document.querySelector('#display').value = cDisplay;">7</button>
-        <button onclick="cDisplay = cDisplay + '8';
-      document.querySelector('#display').value = cDisplay;">8</button>
-        <button onclick="cDisplay = cDisplay + '9';
-      document.querySelector('#display').value = cDisplay;">9</button>
-        <button onclick="cDisplay = cDisplay + '/';
-      document.querySelector('#display').value = cDisplay;">/</button>
-        <button onclick="cDisplay = cDisplay + '4';
-      document.querySelector('#display').value = cDisplay;">4</button>
-        <button onclick="cDisplay = cDisplay + '5';
-      document.querySelector('#display').value = cDisplay;">5</button>
-        <button onclick="cDisplay = cDisplay + '6';
-      document.querySelector('#display').value = cDisplay;">6</button>
-        <button onclick="cDisplay = cDisplay + '*';
-      document.querySelector('#display').value = cDisplay;">*</button>
-        <button onclick="cDisplay = cDisplay + '1';
-      document.querySelector('#display').value = cDisplay;">1</button>
-        <button onclick="cDisplay = cDisplay + '2';
-      document.querySelector('#display').value = cDisplay;">2</button>
-        <button onclick="cDisplay = cDisplay + '3';
-      document.querySelector('#display').value = cDisplay;">3</button>
-        <button onclick="cDisplay = cDisplay + '-';
-      document.querySelector('#display').value = cDisplay;">-</button>
-        <button onclick="cDisplay = cDisplay + '0';
-      document.querySelector('#display').value = cDisplay;">0</button>
-        <button onclick="cDisplay = cDisplay + '.';
-      document.querySelector('#display').value = cDisplay;">.</button>
-        <button onclick="
-      let result = eval(cDisplay);
-      cDisplay = result;
-      document.querySelector('#display').value = cDisplay;
-      
-      ">=</button>
-        <button onclick="cDisplay = cDisplay + '+';
-      document.querySelector('#display').value = cDisplay;">+</button>
-
+        <!-- Simplified HTML without inline onclick -->
+        <button class="btn">(</button>
+        <button class="btn">)</button>
+        <button class="btn">%</button>
+        <button class="btn" id="clear">AC</button>
+        <button class="btn">7</button>
+        <button class="btn">8</button>
+        <button class="btn">9</button>
+        <button class="btn">/</button>
+        <button class="btn">4</button>
+        <button class="btn">5</button>
+        <button class="btn">6</button>
+        <button class="btn">*</button>
+        <button class="btn">1</button>
+        <button class="btn">2</button>
+        <button class="btn">3</button>
+        <button class="btn">-</button>
+        <button class="btn">0</button>
+        <button class="btn">.</button>
+        <button class="btn" id="equals">=</button>
+        <button class="btn">+</button>
       </div>
     </div>
   </div>
-
-
-
-
-
-
   <script src="script.js"></script>
 </body>
 

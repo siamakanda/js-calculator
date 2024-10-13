@@ -6,9 +6,17 @@
 }
 
 body {
-  font-family: Open Sans, Arial;
+  font-family: 'Open Sans', Arial;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 14 px;
+  height: 100vh;
+  /* Full viewport height */
+  display: flex;
+  /* Flexbox for centering */
+  justify-content: center;
+  /* Horizontally center */
+  align-items: center;
+  /* Vertically center */
 }
 
 .container {
@@ -18,9 +26,11 @@ body {
 }
 
 .calculator {
-  margin: 1rem .7rem;
+  margin: 1rem 0.7rem;
   align-items: center;
   width: 100%;
+  max-width: 340px;
+  /* Limit calculator width */
 }
 
 #display {
@@ -28,9 +38,7 @@ body {
   width: 100%;
   border: 1px solid rgb(172, 171, 169);
   border-radius: 5px;
-
 }
-
 
 input#display {
   font-weight: 500;
@@ -50,23 +58,15 @@ button {
   border-radius: 4px;
   background-color: #DADCE0;
   margin: 0.4rem 0px;
-
 }
 
 button:hover {
   background-color: #afafaf;
 }
 
-
-
-
 @media only screen and (min-width: 768px) {
-  /* For desktop: */
-  
   .calculator {
-   margin: 1rem .7rem;
-   align-items: center;
-   width: 340px;
-}
-
+    margin: 1rem 0.7rem;
+    width: 340px;
+  }
 }
